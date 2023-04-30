@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullscreen Slider | WebDevMediaYT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slider()">
+  <div class="container">
+    <div class="slider">
+      <img src="image/1.jpg" class="image" alt="img">
+    </div>
+    <div class="header">
+      <div class="txt">
+        <h1> WebDevMedia </h1>
+        <h3> Subscribe and like WebDevMediaYT channel </h3>
+        <div>
+          <button>Subscribe</button>
+          <button class="btn">Like</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var image = document.querySelector(".image");
+
+    var images = new Array(
+      "image/1.jpg",
+      "image/2.jpg",
+      "image/3.jpg"
+    );
+    var leng = images.length;
+    var i = 0;
+
+    function slider(){
+      if(i > leng-1){
+        i = 0;
+      }
+      image.src = images[i];
+      i++;
+      setTimeout('slider()',2500)
+      }
+  </script>
+</body>
+</html>

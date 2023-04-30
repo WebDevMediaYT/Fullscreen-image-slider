@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slider{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider .image{
+  width: 100%;
+  height: 100%;
+  animation: zoom 2.5s linear infinite;
+}
+@keyframes zoom{
+  0%{
+    transform: scale(1.1);
+  }
+  15%{
+    transform: scale(1);
+  }
+  85%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .txt{
+  width: 60%;
+  margin: 250px auto;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  font-size: 25px;
+}
+.header .txt h3{
+  width: 80%;
+  font-weight: 100;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-inline: auto;
+  margin-bottom: 90px;
+}
+.header .txt button{
+  width: 250px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #065979;
+  border: none;
+  color: #fff;
+}
+.header .txt button:hover{
+  border: 1px solid #065979;
+  background: transparent;
+  transition: .3s ease;
+}
+.header .txt .btn{
+  border: 1px solid #065979;
+  background: transparent;
+}
